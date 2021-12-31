@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FreeCodeCamp</title>
+	<style type="text/css">
+
+	.navbar {
+    height: 80px;
+    width: 95%;
+    background: #dec7f7;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  #rect:hover {
+    animation-name: rainbow;
+    animation-duration: 1s;
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-color: #9b9ef7;
+      top: 0px;
+
+    }
+    50% {
+      background-color: #95c2f9;
+      top: 30px;
+      
+
+
+    }
+    100% {
+      background-color: #95ddf9;
+      top: 0px;
+      
+    }
+  }
+
+
+
+.progressrect {
+    width: 30%;
+    height: 20px;
+    margin: 9px;
+    position: relative;
+    left: 2%;
+    background: linear-gradient(
+      35deg,
+      #b1b0f9,
+      #7ff5c9
+    );
+    animation-name: fade;
+    animation-duration: 60s;
+  }
+
+  @keyframes fade {
+    50% {
+      left: 60%;
+      opacity: 0.15;
+
+    }
+  }
+
+
+.move_right_rect {
+    height: 350px;
+    width: 50%;
+    background: white;
+    margin: 60px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    position: relative;
+    float: left;
+  }
+
+  #rect1:hover {
+    animation-name: move_right;
+    animation-duration: 2s;
+  }
+
+  @keyframes move_right {
+    0% {
+      background-color: #f36650;
+      left: 0px;
+
+    }
+    50% {
+      background-color: #f58573;
+      left: 60px;
+      
+
+
+    }
+    100% {
+      background-color: #fbcbb8;
+      left: 0px;
+      
+    }
+  }
+.right_message{
+	height: 350px;
+	width: 40%;
+	background-color: white;
+	float: right;
+	margin-top: 60px;
+	margin-right: 40px;
+	border-radius: 5px;
+}
+
+.move_left_rect {
+    height: 350px;
+    width: 50%;
+    background: white;
+    margin: 60px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    position: relative;
+    float: right;
+  }
+
+  #rect2:hover {
+    animation-name: move_left;
+    animation-duration: 2s;
+  }
+
+  @keyframes move_left {
+    0% {
+      background-color: #f36650;
+      right: 0px;
+
+    }
+    50% {
+      background-color: #f58573;
+      right: 60px;
+      
+
+
+    }
+    100% {
+      background-color: #fbcbb8;
+      right: 0px;
+      
+    }
+  }
+
+.left_message{
+	height: 350px;
+	width: 40%;
+	background-color: white;
+	float: left;
+	margin-top: 60px;
+	margin-left: 40px;
+	border-radius: 5px;
+}
+
+
+
+
+.bounce_contact{
+	margin-top: 600px auto;
+}
+
+
+#ball1 {
+    width: 300px;
+    height: 300px;
+    margin-top: 60px auto;
+    margin: 60px auto;
+    margin-left: 50px ;
+    position: relative;
+    border-radius: 50%;
+    float : left;
+    background-color: white;
+    }
+ #ball1:hover{
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+  }
+  #ball2 {
+    width: 300px;
+    height: 300px;
+    margin-top: 60px auto;
+    margin: 60px auto;
+    margin-left: 50px;
+    position: relative;
+    border-radius: 50%;
+    float: left;
+    background-color: white;
+    }
+    #ball2:hover{
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+  }
+
+  #ball3 {
+    width: 300px;
+    height: 300px;
+    margin-top: 60px auto;
+    margin: 60px auto;
+    margin-left: 50px;
+    position: relative;
+    border-radius: 50%;
+    float: left;
+    background-color: white;
+    }
+    #ball3:hover{
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    
+  }
+
+#ball4 {
+    width: 300px;
+    height: 300px;
+    margin-top: 60px auto;
+    margin: 60px auto;
+    margin-left: 50px;
+    position: relative;
+    border-radius: 50%;
+    float: left;
+    background-color: white;
+    }
+    #ball4:hover{
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    
+  }
+#ball5 {
+    width: 300px;
+    height: 300px;
+    margin-top: 60px auto;
+    background-color: white;
+    margin: 60px auto;
+    margin-left: 50px;
+    position: relative;
+    border-radius: 50%;
+    float: left;
+    }
+    #ball5:hover{
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    
+  }
+
+
+  @keyframes bounce{
+    0% {
+      top: 0px;
+      left: 0px;
+    }
+    50% {
+      top: 90px;
+      left: 50px;
+      width: 130px;
+      height: 70px;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+    }
+  }
+  .title{
+  	text-align: center;
+  	padding-top: 10px;
+  	font-size: 52px;
+  }
+  .progress_title{
+  	text-align: center;
+  	padding: 2px;
+
+  }
+  .move_right_rect_title{
+  	text-align: center;
+  	font-size: 60px;
+  	text-decoration: italic;
+  	padding-top: 70px;
+  }
+  .right_message_title{
+  	text-align: justify;
+  	font-size: 30px;
+  	padding-top: 60px;
+  }
+  .ball_hover{
+  	text-align: center;
+  	font-family: monospace;
+  	padding-top: 90px;
+  	position: relative;
+  }
+  .navbar_p{
+  	padding: 10px;
+  	font-family: fantasy;
+  	float: right;
+  	background: linear-gradient(
+      35deg,
+      #36f48b,
+      #f3f701
+    );
+    border-radius: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+  }
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		
+		<div class="navbar" id="rect"><h1 class="title">AGRO G-ONE PVT. LMT.</h1><a href="about.html" class="navbar_p">About</a><a href="login.php" class="navbar_p">Login</a></div>
+		<div class="progressrect"><h4 class="progress_title">Welcome To Our Website !</h4></div>
+		<div class="boxbody">
+			
+			<div class="move_right_rect" id="rect1"><h3 class="move_right_rect_title">Hover Me :)</h3></div>
+			<div class="right_message"><h4 class="right_message_title">This will move text to right side slowly with changing the background colors...</h4></div>
+			<div class="move_left_rect" id="rect2"><h3 class="move_right_rect_title">Hover Me :)</h3></div>
+			<div class="left_message"><h4 class="right_message_title">This will move text to left side slowly with changing the background colors...</h4></div>
+
+		</div>
+		<div class="bounce_contact">
+			
+			<div class="contact1" id="ball1"><p class="ball_hover">Hover Me</p></div>
+			<div class="contact2" id="ball2"><p class="ball_hover">Hover Me</p></div>
+			<div class="contact3" id="ball3"><p class="ball_hover">Hover Me</p></div>
+			<div class="contact4" id="ball4"><p class="ball_hover">Hover Me</p></div>
+			<div class="contact5" id="ball5"><p class="ball_hover">Hover Me</p></div>
+
+		</div>
+		<div class="footer">
+			
+			<div class="animate_button"></div>
+		</div>
+
+
+	</div>
+
+</body>
+</html>
